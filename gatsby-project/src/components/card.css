@@ -1,0 +1,24 @@
+/* Initially, show 3 cards per row */
+.card {
+    flex: 1 1 calc(33.33% - 1rem);
+    margin: 0.5rem;
+    padding: 0.5rem;
+
+  }
+  
+  /* Show 2 cards per row when the screen width is 768px or smaller */
+  @media (max-width: 768px) {
+    .card {
+      flex: 1 1 calc(50% - 1rem);
+      margin: 0.5rem,
+    }
+  }
+  
+  /* Show 1 card per row when the screen width is 480px or smaller */
+  @media (max-width: 480px) {
+    .card {
+      flex: 1 1 calc(100% - 1rem);
+      margin: 0.5rem,
+    }
+  }
+  
